@@ -7,16 +7,16 @@ export function JoinBanner() {
         Únete a más de 10.000 alumnos
       </h2>
 
-      <div className="flex items-center gap-4 mb-10">
+      <div className="flex flex-col md:flex-row items-center gap-4 mb-10 w-full md:w-auto px-4 md:px-0">
         <Link
           href="https://www.nocodehackers.es/cursos"
-          className="bg-black text-white text-sm px-8 py-4 rounded"
+          className="bg-black text-white text-sm px-8 py-4 rounded w-full md:w-auto text-center"
         >
           Empieza a aprender
         </Link>
         <Link
           href="#programas"
-          className="border border-black/20 text-black/60 text-sm px-8 py-4 rounded text-center"
+          className="border border-black/20 text-black/60 text-sm px-8 py-4 rounded w-full md:w-auto text-center"
         >
           Ver Programas
         </Link>

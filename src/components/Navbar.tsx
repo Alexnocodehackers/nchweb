@@ -16,7 +16,7 @@ export function Navbar() {
           />
         </Link>
 
-        {/* Navigation */}
+        {/* Navigation - desktop only */}
         <nav className="hidden lg:flex items-center justify-between bg-cream rounded-lg px-6 py-3 flex-1 max-w-[700px] mx-3">
           <button className="flex items-center gap-1.5 text-sm text-black">
             Programas
@@ -35,13 +35,20 @@ export function Navbar() {
           <Link href="https://www.nocodehackers.es/nosotros" className="text-sm text-black">Sobre Nosotros</Link>
         </nav>
 
-        {/* CTA */}
+        {/* CTA - desktop */}
         <Link
           href="https://cursos.nocodehackers.es"
           className="hidden lg:flex items-center justify-center bg-black text-white text-sm rounded-lg px-6 py-3 shrink-0"
         >
           Iniciar Sesión
         </Link>
+
+        {/* Hamburger - mobile */}
+        <button className="lg:hidden flex items-center justify-center w-[48px] h-[48px] rounded-lg border border-black/10">
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none">
+            <path d="M1 1H19M1 7H19M1 13H19" stroke="black" strokeWidth="1.5" strokeLinecap="round" />
+          </svg>
+        </button>
       </div>
     </header>
   );

@@ -9,7 +9,7 @@ export function Hero() {
       </div>
 
       {/* Title */}
-      <h1 className="text-[48px] md:text-[64px] lg:text-[88px] leading-[0.98] tracking-[-5px] text-black max-w-[809px] font-normal mb-6">
+      <h1 className="text-[36px] md:text-[64px] lg:text-[88px] leading-[0.98] tracking-[-3px] md:tracking-[-5px] text-black max-w-[809px] font-normal mb-6">
         Impulsa tu carrera profesional y convierte tus ideas en productos
       </h1>
 
@@ -21,16 +21,16 @@ export function Hero() {
       </p>
 
       {/* CTAs */}
-      <div className="flex items-center gap-4 mb-12">
+      <div className="flex flex-col md:flex-row items-center gap-4 mb-12 w-full md:w-auto">
         <Link
           href="https://www.nocodehackers.es/cursos"
-          className="bg-black text-white text-sm px-8 py-4 rounded"
+          className="bg-black text-white text-sm px-8 py-4 rounded w-full md:w-auto text-center"
         >
           Empieza a aprender hoy
         </Link>
         <Link
           href="#programas"
-          className="border border-black/20 text-black/60 text-sm px-8 py-4 rounded text-center"
+          className="border border-black/20 text-black/60 text-sm px-8 py-4 rounded w-full md:w-auto text-center"
         >
           Ver programas
         </Link>

@@ -72,15 +72,17 @@ function MarqueeColumn({
   reviews,
   direction = "up",
   duration = "25s",
+  className = "",
 }: {
   reviews: { name: string; avatar: string; text: string }[];
   direction?: "up" | "down";
   duration?: string;
+  className?: string;
 }) {
   const items = [...reviews, ...reviews, ...reviews, ...reviews];
 
   return (
-    <div className="flex-1 overflow-hidden h-[600px] relative">
+    <div className={`flex-1 overflow-hidden h-[600px] relative ${className}`}>
       <div
         className="flex flex-col gap-4"
         style={{
@@ -98,14 +100,14 @@ function MarqueeColumn({
 export function Reviews() {
   return (
     <section className="px-6 lg:px-16 py-16 max-w-[1200px] mx-auto">
-      <h2 className="text-[32px] md:text-[48px] leading-[1.1] tracking-[-1px] text-black font-normal text-center mb-10">
+      <h2 className="text-[32px] md:text-[48px] leading-[1.1] tracking-[-1px] text-black font-normal text-left md:text-center mb-10">
         Opiniones reales de alumnos reales
       </h2>
 
       <div className="flex gap-4">
         <MarqueeColumn reviews={column1} direction="up" duration="30s" />
-        <MarqueeColumn reviews={column2} direction="down" duration="28s" />
-        <MarqueeColumn reviews={column3} direction="up" duration="32s" />
+        <MarqueeColumn reviews={column2} direction="down" duration="28s" className="hidden md:block" />
+        <MarqueeColumn reviews={column3} direction="up" duration="32s" className="hidden lg:block" />
       </div>
     </section>
   );

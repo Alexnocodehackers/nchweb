@@ -10,7 +10,7 @@ export function FreeCourse() {
             <span className="text-xs text-white">Curso Gratuito</span>
           </div>
 
-          <h2 className="text-[32px] md:text-[48px] leading-[1.1] tracking-[-1px] text-black font-normal mb-5">
+          <h2 className="text-[28px] md:text-[48px] leading-[1.1] tracking-[-1px] text-black font-normal mb-5">
             Descubre el potencial de combinar la IA con el No-code con este
             curso de introdución 100% gratis
           </h2>

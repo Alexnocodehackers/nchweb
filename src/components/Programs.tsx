@@ -76,15 +76,15 @@ export function Programs() {
   return (
     <section id="programas" className="bg-cream px-6 lg:px-16 py-20 lg:py-28">
       <div className="max-w-[1200px] mx-auto">
-        {/* Header - centered */}
-        <div className="text-center mb-10">
+        {/* Header */}
+        <div className="text-left md:text-center mb-10">
           <div className="bg-nch-orange rounded-lg px-4 py-2 inline-block mb-3">
             <span className="text-xs text-white">Nuestras formaciones</span>
           </div>
-          <h2 className="text-[48px] md:text-[64px] lg:text-[88px] leading-[0.98] tracking-[-5px] text-black font-normal mb-4">
+          <h2 className="text-[36px] md:text-[64px] lg:text-[88px] leading-[0.98] tracking-[-3px] md:tracking-[-5px] text-black font-normal mb-4">
             Descubre nuestros programas
           </h2>
-          <p className="text-sm text-black/60 leading-5 max-w-[500px] mx-auto">
+          <p className="text-sm text-black/60 leading-5 max-w-[500px] md:mx-auto">
             Escoge el programa que más se adapte a ti. Aprende en formaciones de
             6-8 semanas y en grupos reducidos de 20 personas.
           </p>

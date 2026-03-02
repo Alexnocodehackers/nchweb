@@ -61,7 +61,7 @@ export function FAQ() {
             }
           >
             <div className="flex-1">
-              <h3 className="text-[24px] leading-[24px] tracking-[-1px] text-black font-normal">
+              <h3 className="text-[18px] md:text-[24px] leading-[1.2] tracking-[-0.5px] md:tracking-[-1px] text-black font-normal">
                 {faq.question}
               </h3>
               {openIndex === index && (
